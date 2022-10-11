@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+  <title>Interactive Rating Component</title>
+
+</head>
+<body>
+
+  <main class="main-container">
+    <div id="rating-container" class="rating-container">
+      <div id="star" class="rounded-container">
+        <span class="material-symbols-outlined star">
+          star
+        </span>
+      </div>
+      <h1>
+        How did we do?
+      </h1>
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+      <div class="rating-list">
+        <button class="rating-button">
+          1
+        </button>
+        <button class="rating-button">
+          2
+        </button>
+        <button class="rating-button">
+          3
+        </button>
+        <button class="rating-button">
+          4
+        </button>
+        <button class="rating-button">
+          5
+        </button>
+      </div>
+      <button type="button" id="submit-rating-button" class="submit-button">
+        submit
+      </button>
+    </div>
+    <div id="thank-container" class="thank-container display-none">
+      <img src="./images/illustration-thank-you.svg" alt="Thank you illustration">
+      <div class="selection-pill">
+        <span id="selectedRatingMessage" class="rating-description" />
+      </div>
+      <h1>
+        Thank you!
+      </h1>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </p>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
